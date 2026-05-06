@@ -1,0 +1,126 @@
+@use "./style/button.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+    width: 100%;
+    min-height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f6f8ff;
+    color: #1f2937;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.highlight {
+    color: #e6468a;
+}
+
+
+.app-navbar {
+    width: 100%;
+    min-height: 68px;
+    padding: 0 7%;
+    background: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.app-logo {
+    font-size: 1.45rem;
+    font-weight: 700;
+    color: #1f2937;
+}
+
+.app-nav-links {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logout-btn {
+    border: none;
+    padding: 0.65rem 1.15rem;
+    border-radius: 8px;
+    background: #e6468a;
+    color: #ffffff;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.logout-btn:hover {
+    background: #d63378;
+}
+
+
+.app-footer {
+    padding: 1.5rem 7%;
+    background: #ffffff;
+    border-top: 1px solid #e5e7eb;
+    color: #6b7280;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.footer-links a {
+    color: #6b7280;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.footer-links a:hover {
+    color: #e6468a;
+}
+
+
+.error-box {
+    margin-top: 1rem;
+    padding: 0.8rem 1rem;
+    border-radius: 8px;
+    background: #fff1f2;
+    border: 1px solid #fecdd3;
+    color: #be123c;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.loading-screen {
+    width: 100%;
+    min-height: 100vh;
+    background: #f6f8ff;
+    color: #1f2937;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .app-navbar,
+    .app-footer {
+        padding: 1rem 5%;
+        flex-direction: column;
+        gap: 0.8rem;
+        text-align: center;
+    }
+
+    .footer-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,22 @@
+# node modules
+node_modules
+Frontend/node_modules
+Backend/node_modules
+
+# env files (MOST IMPORTANT)
+.env
+.env.*
+Frontend/.env
+Backend/.env
+
+# build
+dist
+build
+
+# logs
+logs
+*.log
+
+# vscode
+.vscode
+.idea
